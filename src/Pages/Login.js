@@ -48,12 +48,10 @@ function Login() {
     }, 1000);
   };
 
-  useEffect(() => {
-    if (load) {
-      setLoad(false);
-      handleInitialLogin();
-    }
-  }, [load]);
+  if (load) {
+    setLoad(false);
+    handleInitialLogin();
+  }
 
   return (
     <div className="login">
