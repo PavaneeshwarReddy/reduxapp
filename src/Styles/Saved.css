@@ -1,0 +1,21 @@
+/* Saved.css */
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust the height as needed to center vertically */
+  }
+  
+  .no-data-image {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .no-data-text {
+    margin-top: 10px; /* Adjust the margin as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+    color: #999; /* Adjust the color as needed */
+  }
+  

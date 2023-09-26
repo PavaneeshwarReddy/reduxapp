@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.brand{
+    font-weight: bold;
+}
+
+.navbar-list   {
+    display: flex;
+    gap: 20px;
+}
