@@ -1,10 +1,12 @@
 import React from 'react'
 import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/default-highlight';
-import { dark, docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { codeSnippets } from '../Data/codeSnippets';
 import ReduxStoreExplanation from '../Pages/ReactStoreExplanation';
 import ReactAuthenticationSlice from '../Pages/ReactAuthenticationSlice';
 import ReactPostSlice from '../Pages/ReactPostSlice';
+
+
 function Documentation() {
   return (
     <div style={{display:"flex",justifyContent:"center",flexDirection:'column',alignItems:"center"}}>

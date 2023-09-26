@@ -13,7 +13,7 @@ function Navbar() {
   reduxStore.subscribe(() => {
     const user = reduxStore.getState().authentication.username;
     console.log("state changed")
-    if (user != "") {
+    if (user !=="") {
       setUsername(user);
     }
     else{
