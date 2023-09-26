@@ -32,7 +32,7 @@ function Saved() {
               <img
                 className="photo"
                 src={post["image_url"]}
-                alt={`Image for ${post["character_name"]}`}
+                alt={`unable to load for ${post["character_name"]}`}
               />
               <div>{post["played_by"]}</div>
               <div>{post["character_name"]}</div>
