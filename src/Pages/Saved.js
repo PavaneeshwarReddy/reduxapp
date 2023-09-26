@@ -42,6 +42,7 @@ function Saved() {
                 className="icon"
                 src={BinImg}
                 alt="Delete"
+                width={25}
               />
             </div>
           );

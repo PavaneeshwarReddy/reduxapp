@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/Login.css";
 import BotImg from "../Images/bot.png";
 import { useNavigate } from "react-router-dom";
@@ -8,17 +8,17 @@ import { setLoginInfo } from "../StateManagement/authenticationSlice";
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [botMessages, setBotMessages] = useState(["Welcome to ReduxDemoPlain"]);
+  const [botMessages, setBotMessages] = useState(["🤖 Welcome to ReduxDemoPlain"]);
   const dispatch = useDispatch();
-  const [load,setLoad] = useState(true);
+  const [load, setLoad] = useState(true);
   const navigate = useNavigate();
 
   const botDatabase = [
-    "This website is a small demo of how Redux works.",
-    "Enter username: Pavaneeshwar7077",
-    "Enter password: Test@123",
-    "You have successfully completed the login process.",
-    "Successfully Saved to Authentication Redux Slice",
+    "This website is a small demo of how Redux works. 👨‍💻",
+    "Enter username: Pavaneeshwar7077 📝",
+    "Enter password: Test@123 🔒",
+    "You have successfully completed the login process. 🎉",
+    "Successfully Saved to Authentication Redux Slice. 💾",
   ];
 
   const handleLogin = () => {
@@ -27,7 +27,7 @@ function Login() {
       const successMessages = [
         botDatabase[3],
         botDatabase[4],
-        "Now you can see changes in the navbar, the state updates to logged in....",
+        "Now you can see changes in the navbar, the state updates to logged in.... 🌟",
       ];
       setBotMessages([...botMessages, ...successMessages]);
 
@@ -41,26 +41,24 @@ function Login() {
     }
   };
 
-
- 
-  const handleIntialLogin = () => {
+  const handleInitialLogin = () => {
     setTimeout(() => {
       const initialBotMessages = [botDatabase[0], botDatabase[1], botDatabase[2]];
       setBotMessages((prevMessages) => [...prevMessages, ...initialBotMessages]);
     }, 1000);
   };
 
-  if(load){
-    setLoad(false);
-    handleIntialLogin();
-  }
-  
-  
+  useEffect(() => {
+    if (load) {
+      setLoad(false);
+      handleInitialLogin();
+    }
+  }, [load]);
 
   return (
     <div className="login">
       <div>
-        <h5>Redux Bot</h5>
+        <h5>Redux Bot 🤖</h5>
         <div className="chatBox">
           <div>
             {botMessages.map((message, index) => (
