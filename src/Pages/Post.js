@@ -22,7 +22,7 @@ function Post() {
             <div>{ele["played_by"]}</div>
             <div>{ele["character_name"]}</div>
             <div>{ele["movie"]}</div>
-            <img onClick={()=>handleSavePost(index)} className='icon' src={BookMark}/>
+            <img onClick={()=>handleSavePost(index)} className='icon' src={BookMark} alt='unable to load'/>
           </div>
         })
       }
