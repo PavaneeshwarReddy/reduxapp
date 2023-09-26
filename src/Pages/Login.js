@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../Styles/Login.css";
 import BotImg from "../Images/bot.png";
 import { useNavigate } from "react-router-dom";
