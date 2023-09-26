@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, { useState } from "react";
 import "../Styles/Login.css";
 import BotImg from "../Images/bot.png";
 import { useNavigate } from "react-router-dom";
@@ -10,6 +10,7 @@ function Login() {
   const [password, setPassword] = useState("");
   const [botMessages, setBotMessages] = useState(["Welcome to ReduxDemoPlain"]);
   const dispatch = useDispatch();
+  const [load,setLoad] = useState(true);
   const navigate = useNavigate();
 
   const botDatabase = [
@@ -49,10 +50,10 @@ function Login() {
     }, 1000);
   };
 
-  useEffect(() => {
-    // Call handleIntialLogin once when the component mounts
+  if(load){
+    setLoad(false);
     handleIntialLogin();
-  }, [handleIntialLogin]); 
+  }
   
   
 
