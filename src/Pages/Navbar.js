@@ -26,7 +26,7 @@ function Navbar() {
     <div className="navbar">
       <div className="brand">ReduxDemoPlain</div>
       <div></div>
-      {username == "" ? (
+      {username === "" ? (
         <div className="navbar-list">
           <Link to="/">Home</Link>
           <Link to="/login">Login</Link>
