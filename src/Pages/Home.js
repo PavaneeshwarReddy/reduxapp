@@ -16,7 +16,7 @@ function Home() {
         <li><strong>Centered Content:</strong> We've centered all our content to ensure your attention remains on Redux. The title "ReduxPlainDemo" is prominently displayed, reminding you of our core focus.</li>
         <li><strong>Minimal Design:</strong> By design, our website doesn't care about aesthetics. Instead, we prioritize functionality and understanding Redux. You won't find complex styles or elaborate layouts here—just pure Redux knowledge.</li>
       </ol>
-      <img width={500} src="https://www.freecodecamp.org/news/content/images/2022/06/2.png"/>
+      <img width={500} src="https://www.freecodecamp.org/news/content/images/2022/06/2.png" alt="unabelt to load"/>
       <p>Explore and Learn</p>
       <p>Feel free to navigate through our site to explore the world of Redux state management. Whether you're new to Redux or looking to deepen your understanding, our content is here to guide you.</p>
       <p>Happy Redux coding!</p>
