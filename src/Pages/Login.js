@@ -41,7 +41,7 @@ function Login() {
   };
 
 
-  useEffect(() => {
+ 
     const handleIntialLogin = () => {
       setTimeout(() => {
         const initialBotMessages = [botDatabase[0], botDatabase[1], botDatabase[2]];
@@ -51,7 +51,7 @@ function Login() {
   
     // Simulate bot messages over time
     handleIntialLogin();
-  }, []);
+
   
   
 
