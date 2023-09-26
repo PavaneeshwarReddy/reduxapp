@@ -52,7 +52,7 @@ function Login() {
   useEffect(() => {
     // Call handleIntialLogin once when the component mounts
     handleIntialLogin();
-  }, []); 
+  }, [handleIntialLogin]); 
   
   
 
