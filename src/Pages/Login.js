@@ -40,13 +40,17 @@ function Login() {
     }
   };
 
-  useEffect(() => {
-    // Simulate bot messages over time
+
+  const handleIntialLogin=()=>{
     setTimeout(() => {
       const initialBotMessages = [botDatabase[0], botDatabase[1], botDatabase[2]];
       setBotMessages((prevMessages) => [...prevMessages, ...initialBotMessages]);
     }, 1000);
-  }, [botDatabase]);
+  }
+  useEffect(() => {
+    // Simulate bot messages over time
+    handleIntialLogin();
+  }, []);
   
 
   return (
